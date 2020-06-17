@@ -23,6 +23,12 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+# config Guardian
+config :instagram, InstagramWeb.Auth.Guardian,
+  issuer: "instagram",
+  verify_issuer: true,
+  secret_key: "ZnlLtxqtr+zs483OEY8DVgpxqxrnhqxzSyluCnciVZrHKSKbVPJ5RD+AM/Odws5r"
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
