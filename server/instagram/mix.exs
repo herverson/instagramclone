@@ -47,6 +47,7 @@ defmodule Instagram.MixProject do
       {:absinthe_plug, "~> 1.4"},
       {:faker, "~> 0.9", only: [:dev, :test]},
       {:cors_plug, "~> 1.5"},
+      {:facebook, "~> 0.17.0"},
     ]
   end
 
